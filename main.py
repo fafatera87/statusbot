@@ -43,6 +43,10 @@ def main():
         update_channel = os.environ.get("-1001837260549")
         status_message_ids_str = os.environ.get("43")
 
+        # Debug print to check environment variables
+        print("Update Channel:", update_channel)
+        print("Status Message IDs:", status_message_ids_str)
+
         # Initialize Pyrogram client with API key
         user_client = Client(name=str(user_session_string), api_id=API_ID, api_hash=API_HASH)
 
